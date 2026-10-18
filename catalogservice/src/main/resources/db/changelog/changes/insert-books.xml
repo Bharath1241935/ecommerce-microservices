@@ -1,0 +1,490 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert-books-001" author="bharath">
+
+        <insert tableName="books">
+            <column name="bookname" value="Clean Code"/>
+            <column name="description" value="A guide to writing readable and maintainable code"/>
+            <column name="price" valueNumeric="450.00"/>
+            <column name="quantity_available" valueNumeric="25"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Robert C. Martin"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Effective Java"/>
+            <column name="description" value="Best practices for Java programming"/>
+            <column name="price" valueNumeric="550.00"/>
+            <column name="quantity_available" valueNumeric="30"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Joshua Bloch"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Java Concurrency in Practice"/>
+            <column name="description" value="Multithreading and concurrency in Java"/>
+            <column name="price" valueNumeric="650.00"/>
+            <column name="quantity_available" valueNumeric="15"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Brian Goetz"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Head First Java"/>
+            <column name="description" value="An illustrated introduction to Java"/>
+            <column name="price" valueNumeric="500.00"/>
+            <column name="quantity_available" valueNumeric="20"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Kathy Sierra"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Spring in Action"/>
+            <column name="description" value="Building applications with Spring Framework"/>
+            <column name="price" valueNumeric="700.00"/>
+            <column name="quantity_available" valueNumeric="18"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Craig Walls"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Design Patterns"/>
+            <column name="description" value="Reusable object-oriented software design solutions"/>
+            <column name="price" valueNumeric="600.00"/>
+            <column name="quantity_available" valueNumeric="12"/>
+            <column name="book_category" value="Software Engineering"/>
+            <column name="author" value="Erich Gamma"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Refactoring"/>
+            <column name="description" value="Improving the design of existing code"/>
+            <column name="price" valueNumeric="580.00"/>
+            <column name="quantity_available" valueNumeric="16"/>
+            <column name="book_category" value="Software Engineering"/>
+            <column name="author" value="Martin Fowler"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Pragmatic Programmer"/>
+            <column name="description" value="Practical techniques for software developers"/>
+            <column name="price" valueNumeric="620.00"/>
+            <column name="quantity_available" valueNumeric="22"/>
+            <column name="book_category" value="Software Engineering"/>
+            <column name="author" value="David Thomas"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Domain-Driven Design"/>
+            <column name="description" value="Designing complex software around business domains"/>
+            <column name="price" valueNumeric="750.00"/>
+            <column name="quantity_available" valueNumeric="10"/>
+            <column name="book_category" value="Software Engineering"/>
+            <column name="author" value="Eric Evans"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Clean Architecture"/>
+            <column name="description" value="Principles for designing maintainable software systems"/>
+            <column name="price" valueNumeric="680.00"/>
+            <column name="quantity_available" valueNumeric="14"/>
+            <column name="book_category" value="Software Engineering"/>
+            <column name="author" value="Robert C. Martin"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Algorithms"/>
+            <column name="description" value="Fundamental algorithms and problem-solving techniques"/>
+            <column name="price" valueNumeric="800.00"/>
+            <column name="quantity_available" valueNumeric="12"/>
+            <column name="book_category" value="Computer Science"/>
+            <column name="author" value="Robert Sedgewick"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Introduction to Algorithms"/>
+            <column name="description" value="Comprehensive reference on algorithms"/>
+            <column name="price" valueNumeric="950.00"/>
+            <column name="quantity_available" valueNumeric="8"/>
+            <column name="book_category" value="Computer Science"/>
+            <column name="author" value="Thomas H. Cormen"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The C Programming Language"/>
+            <column name="description" value="A classic guide to C programming"/>
+            <column name="price" valueNumeric="400.00"/>
+            <column name="quantity_available" valueNumeric="20"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Brian W. Kernighan"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Effective Python"/>
+            <column name="description" value="Practical techniques for Python developers"/>
+            <column name="price" valueNumeric="520.00"/>
+            <column name="quantity_available" valueNumeric="17"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Brett Slatkin"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Fluent Python"/>
+            <column name="description" value="Advanced Python language features and idioms"/>
+            <column name="price" valueNumeric="720.00"/>
+            <column name="quantity_available" valueNumeric="11"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Luciano Ramalho"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Java: The Complete Reference"/>
+            <column name="description" value="Comprehensive Java programming reference"/>
+            <column name="price" valueNumeric="680.00"/>
+            <column name="quantity_available" valueNumeric="24"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Herbert Schildt"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Microservices Patterns"/>
+            <column name="description" value="Patterns for developing and deploying microservices"/>
+            <column name="price" valueNumeric="780.00"/>
+            <column name="quantity_available" valueNumeric="13"/>
+            <column name="book_category" value="Microservices"/>
+            <column name="author" value="Chris Richardson"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Building Microservices"/>
+            <column name="description" value="Designing fine-grained distributed systems"/>
+            <column name="price" valueNumeric="740.00"/>
+            <column name="quantity_available" valueNumeric="15"/>
+            <column name="book_category" value="Microservices"/>
+            <column name="author" value="Sam Newman"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Spring Boot in Action"/>
+            <column name="description" value="Developing Spring Boot applications"/>
+            <column name="price" valueNumeric="590.00"/>
+            <column name="quantity_available" valueNumeric="19"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Craig Walls"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Spring Security in Action"/>
+            <column name="description" value="Authentication and authorization with Spring Security"/>
+            <column name="price" valueNumeric="690.00"/>
+            <column name="quantity_available" valueNumeric="12"/>
+            <column name="book_category" value="Programming"/>
+            <column name="author" value="Laurentiu Spilca"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="PostgreSQL Up and Running"/>
+            <column name="description" value="Practical PostgreSQL database administration"/>
+            <column name="price" valueNumeric="480.00"/>
+            <column name="quantity_available" valueNumeric="21"/>
+            <column name="book_category" value="Database"/>
+            <column name="author" value="Regina Obe"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Learning SQL"/>
+            <column name="description" value="SQL fundamentals and relational database querying"/>
+            <column name="price" valueNumeric="430.00"/>
+            <column name="quantity_available" valueNumeric="25"/>
+            <column name="book_category" value="Database"/>
+            <column name="author" value="Alan Beaulieu"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Database System Concepts"/>
+            <column name="description" value="Database design, transactions and query processing"/>
+            <column name="price" valueNumeric="850.00"/>
+            <column name="quantity_available" valueNumeric="9"/>
+            <column name="book_category" value="Database"/>
+            <column name="author" value="Abraham Silberschatz"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Designing Data-Intensive Applications"/>
+            <column name="description" value="Reliable and scalable data systems"/>
+            <column name="price" valueNumeric="820.00"/>
+            <column name="quantity_available" valueNumeric="14"/>
+            <column name="book_category" value="Database"/>
+            <column name="author" value="Martin Kleppmann"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Operating System Concepts"/>
+            <column name="description" value="Core operating system principles"/>
+            <column name="price" valueNumeric="900.00"/>
+            <column name="quantity_available" valueNumeric="7"/>
+            <column name="book_category" value="Computer Science"/>
+            <column name="author" value="Abraham Silberschatz"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Computer Networks"/>
+            <column name="description" value="Network protocols and communication systems"/>
+            <column name="price" valueNumeric="650.00"/>
+            <column name="quantity_available" valueNumeric="16"/>
+            <column name="book_category" value="Networking"/>
+            <column name="author" value="Andrew S. Tanenbaum"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Artificial Intelligence: A Modern Approach"/>
+            <column name="description" value="Foundations and techniques of artificial intelligence"/>
+            <column name="price" valueNumeric="1000.00"/>
+            <column name="quantity_available" valueNumeric="6"/>
+            <column name="book_category" value="Artificial Intelligence"/>
+            <column name="author" value="Stuart Russell"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Hands-On Machine Learning"/>
+            <column name="description" value="Machine learning concepts and practical projects"/>
+            <column name="price" valueNumeric="880.00"/>
+            <column name="quantity_available" valueNumeric="11"/>
+            <column name="book_category" value="Machine Learning"/>
+            <column name="author" value="Aurélien Géron"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Deep Learning"/>
+            <column name="description" value="Deep learning theory and neural network methods"/>
+            <column name="price" valueNumeric="920.00"/>
+            <column name="quantity_available" valueNumeric="8"/>
+            <column name="book_category" value="Machine Learning"/>
+            <column name="author" value="Ian Goodfellow"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Lean Startup"/>
+            <column name="description" value="Building and testing new business ideas"/>
+            <column name="price" valueNumeric="350.00"/>
+            <column name="quantity_available" valueNumeric="30"/>
+            <column name="book_category" value="Business"/>
+            <column name="author" value="Eric Ries"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Atomic Habits"/>
+            <column name="description" value="Practical methods for building better habits"/>
+            <column name="price" valueNumeric="399.00"/>
+            <column name="quantity_available" valueNumeric="40"/>
+            <column name="book_category" value="Self Help"/>
+            <column name="author" value="James Clear"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Deep Work"/>
+            <column name="description" value="Strategies for focused and productive work"/>
+            <column name="price" valueNumeric="380.00"/>
+            <column name="quantity_available" valueNumeric="28"/>
+            <column name="book_category" value="Self Help"/>
+            <column name="author" value="Cal Newport"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Think and Grow Rich"/>
+            <column name="description" value="Classic principles of personal achievement"/>
+            <column name="price" valueNumeric="250.00"/>
+            <column name="quantity_available" valueNumeric="35"/>
+            <column name="book_category" value="Self Help"/>
+            <column name="author" value="Napoleon Hill"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Psychology of Money"/>
+            <column name="description" value="Lessons on wealth, behavior and financial decisions"/>
+            <column name="price" valueNumeric="320.00"/>
+            <column name="quantity_available" valueNumeric="32"/>
+            <column name="book_category" value="Finance"/>
+            <column name="author" value="Morgan Housel"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Rich Dad Poor Dad"/>
+            <column name="description" value="Personal finance and financial education"/>
+            <column name="price" valueNumeric="300.00"/>
+            <column name="quantity_available" valueNumeric="35"/>
+            <column name="book_category" value="Finance"/>
+            <column name="author" value="Robert T. Kiyosaki"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Alchemist"/>
+            <column name="description" value="A novel about dreams and personal destiny"/>
+            <column name="price" valueNumeric="280.00"/>
+            <column name="quantity_available" valueNumeric="30"/>
+            <column name="book_category" value="Fiction"/>
+            <column name="author" value="Paulo Coelho"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="1984"/>
+            <column name="description" value="A dystopian novel about surveillance and control"/>
+            <column name="price" valueNumeric="260.00"/>
+            <column name="quantity_available" valueNumeric="22"/>
+            <column name="book_category" value="Fiction"/>
+            <column name="author" value="George Orwell"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Animal Farm"/>
+            <column name="description" value="A political allegory about power and society"/>
+            <column name="price" valueNumeric="220.00"/>
+            <column name="quantity_available" valueNumeric="24"/>
+            <column name="book_category" value="Fiction"/>
+            <column name="author" value="George Orwell"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="To Kill a Mockingbird"/>
+            <column name="description" value="A novel about justice and morality"/>
+            <column name="price" valueNumeric="290.00"/>
+            <column name="quantity_available" valueNumeric="18"/>
+            <column name="book_category" value="Fiction"/>
+            <column name="author" value="Harper Lee"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Pride and Prejudice"/>
+            <column name="description" value="A classic novel of love and social expectations"/>
+            <column name="price" valueNumeric="240.00"/>
+            <column name="quantity_available" valueNumeric="20"/>
+            <column name="book_category" value="Classic Literature"/>
+            <column name="author" value="Jane Austen"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Great Gatsby"/>
+            <column name="description" value="A novel exploring ambition and the American dream"/>
+            <column name="price" valueNumeric="270.00"/>
+            <column name="quantity_available" valueNumeric="16"/>
+            <column name="book_category" value="Classic Literature"/>
+            <column name="author" value="F. Scott Fitzgerald"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Hobbit"/>
+            <column name="description" value="A fantasy adventure in Middle-earth"/>
+            <column name="price" valueNumeric="340.00"/>
+            <column name="quantity_available" valueNumeric="25"/>
+            <column name="book_category" value="Fantasy"/>
+            <column name="author" value="J. R. R. Tolkien"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Harry Potter and the Philosopher's Stone"/>
+            <column name="description" value="A young wizard begins his magical education"/>
+            <column name="price" valueNumeric="420.00"/>
+            <column name="quantity_available" valueNumeric="30"/>
+            <column name="book_category" value="Fantasy"/>
+            <column name="author" value="J. K. Rowling"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Lord of the Rings"/>
+            <column name="description" value="An epic fantasy quest to destroy a powerful ring"/>
+            <column name="price" valueNumeric="650.00"/>
+            <column name="quantity_available" valueNumeric="14"/>
+            <column name="book_category" value="Fantasy"/>
+            <column name="author" value="J. R. R. Tolkien"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Sapiens"/>
+            <column name="description" value="A history of humankind and civilization"/>
+            <column name="price" valueNumeric="480.00"/>
+            <column name="quantity_available" valueNumeric="20"/>
+            <column name="book_category" value="History"/>
+            <column name="author" value="Yuval Noah Harari"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="A Brief History of Time"/>
+            <column name="description" value="An introduction to cosmology and the universe"/>
+            <column name="price" valueNumeric="390.00"/>
+            <column name="quantity_available" valueNumeric="15"/>
+            <column name="book_category" value="Science"/>
+            <column name="author" value="Stephen Hawking"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Cosmos"/>
+            <column name="description" value="An exploration of astronomy and the universe"/>
+            <column name="price" valueNumeric="450.00"/>
+            <column name="quantity_available" valueNumeric="12"/>
+            <column name="book_category" value="Science"/>
+            <column name="author" value="Carl Sagan"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Wings of Fire"/>
+            <column name="description" value="Autobiography of scientist A. P. J. Abdul Kalam"/>
+            <column name="price" valueNumeric="300.00"/>
+            <column name="quantity_available" valueNumeric="28"/>
+            <column name="book_category" value="Biography"/>
+            <column name="author" value="A. P. J. Abdul Kalam"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="India After Gandhi"/>
+            <column name="description" value="A history of India after independence"/>
+            <column name="price" valueNumeric="700.00"/>
+            <column name="quantity_available" valueNumeric="10"/>
+            <column name="book_category" value="History"/>
+            <column name="author" value="Ramachandra Guha"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Intelligent Investor"/>
+            <column name="description" value="Principles of value investing"/>
+            <column name="price" valueNumeric="550.00"/>
+            <column name="quantity_available" valueNumeric="18"/>
+            <column name="book_category" value="Finance"/>
+            <column name="author" value="Benjamin Graham"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Zero to One"/>
+            <column name="description" value="Notes on startups and building innovative businesses"/>
+            <column name="price" valueNumeric="360.00"/>
+            <column name="quantity_available" valueNumeric="23"/>
+            <column name="book_category" value="Business"/>
+            <column name="author" value="Peter Thiel"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="Start with Why"/>
+            <column name="description" value="Leadership and purpose-driven organizations"/>
+            <column name="price" valueNumeric="330.00"/>
+            <column name="quantity_available" valueNumeric="19"/>
+            <column name="book_category" value="Business"/>
+            <column name="author" value="Simon Sinek"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="bookname" value="The Power of Habit"/>
+            <column name="description" value="The science behind habits and behavior change"/>
+            <column name="price" valueNumeric="370.00"/>
+            <column name="quantity_available" valueNumeric="21"/>
+            <column name="book_category" value="Self Help"/>
+            <column name="author" value="Charles Duhigg"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
