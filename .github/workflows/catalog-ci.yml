@@ -40,13 +40,12 @@ jobs:
 
       - name: Verify project files
         run: |
-          pwd
           ls -la
-          ls -la catalog-service
-          test -f catalog-service/pom.xml
+          ls -la catalogservice
+          test -f catalogservice/pom.xml
 
       - name: Build and test Catalog Service
-        run: mvn -B -f catalog-service/pom.xml clean verify
+        run: mvn -B -f catalogservice/pom.xml clean verify
         env:
           SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/ecommerce_catalog
           SPRING_DATASOURCE_USERNAME: postgres
