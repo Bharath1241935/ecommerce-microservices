@@ -24,6 +24,11 @@ jobs:
           distribution: temurin
           java-version: '21'
           cache: maven
+          
+      - name: Verify Java and Maven versions
+        run: |
+          java -version
+          mvn -version
 
       - name: Build and test
         run: mvn -B -f catalog-service/pom.xml clean verify
