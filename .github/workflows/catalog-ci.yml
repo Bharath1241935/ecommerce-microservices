@@ -14,7 +14,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ghcr.io/${{ toLower(github.repository_owner) }}/catalogservice
+  IMAGE_NAME: ghcr.io/bharath1241935/catalogservice
 
 jobs:
   catalog-ci:
@@ -79,4 +79,6 @@ jobs:
           context: ./catalogservice
           file: ./catalogservice/Dockerfile
           push: true
-          tags: ${{ env.IMAGE_NAME }}:latest,${{ env.IMAGE_NAME }}:${{ github.sha }}
+          tags: |
+            ${{ env.IMAGE_NAME }}:latest
+            ${{ env.IMAGE_NAME }}:${{ github.sha }}
