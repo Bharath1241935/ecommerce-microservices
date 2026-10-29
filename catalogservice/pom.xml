@@ -8,10 +8,10 @@
 		<version>4.0.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.wcs</groupId>
-	<artifactId>wcs-server</artifactId>
+	<groupId>com.ecommerce</groupId>
+	<artifactId>catalog-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>wcs-server</name>
+	<name>catalog-service</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
